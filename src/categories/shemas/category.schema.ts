@@ -1,7 +1,11 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
-@Schema()
+@Schema({
+  timestamps: true,
+  toJSON: { virtuals: true },
+  toObject: { virtuals: true },
+})
 export class Category extends Document {
   @Prop({ required: true, maxlength: 100 })
   name: string;
@@ -11,6 +15,10 @@ export class Category extends Document {
 
   @Prop({ required: true })
   image: string;
+
+  @Prop({ required: true, default: 0 })
+  order: number;
 }
 
-export const CategorySchema = SchemaFactory.createForClass(Category);
+const CategorySchema = SchemaFactory.createForClass(Category);
+export { CategorySchema };
