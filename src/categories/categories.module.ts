@@ -11,7 +11,7 @@ import { CategoryLoaders } from './category.loaders';
       { name: Category.name, schema: CategorySchema },
     ]),
   ],
-  providers: [CategoriesService, CategoriesResolver],
+  providers: [CategoriesService, CategoriesResolver, CategoryLoaders],
   exports: [CategoriesService, CategoryLoaders],
 })
 export class CategoriesModule {}
