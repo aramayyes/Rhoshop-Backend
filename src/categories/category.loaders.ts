@@ -1,6 +1,6 @@
 import { Injectable, Scope } from '@nestjs/common';
 import { CategoriesService } from './categories.service';
-import { CategoryDto } from './dto/category.dto';
+import { CategoryDto } from './dto';
 import * as DataLoader from 'dataloader';
 
 @Injectable({ scope: Scope.REQUEST })

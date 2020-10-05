@@ -1,7 +1,7 @@
 import { Args, Parent, Query, ResolveField, Resolver } from '@nestjs/graphql';
 import { ProductsService } from './products.service';
-import { ProductDto } from './dto/product.dto';
-import { CategoryDto } from '../categories/dto/category.dto';
+import { ProductDto } from './dto';
+import { CategoryDto } from '../categories/dto';
 import { CategoryLoaders } from '../categories/category.loaders';
 import { ProductArgs, ProductsArgs, CategoryArgs } from './args';
 
