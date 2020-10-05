@@ -1,0 +1,9 @@
+type Category {
+  id: String!
+  name: String!
+  image: String!
+}
+
+type Query {
+  categories(language: String): [Category]
+}
