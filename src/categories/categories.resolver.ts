@@ -2,7 +2,6 @@ import { Args, Query, Resolver } from '@nestjs/graphql';
 import { CategoriesService } from './categories.service';
 import { CategoryDto } from './dto/category.dto';
 
-
 @Resolver()
 export class CategoriesResolver {
   constructor(private readonly categoriesService: CategoriesService) {}
