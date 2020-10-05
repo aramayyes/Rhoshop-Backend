@@ -11,7 +11,6 @@ export class CategoriesResolver {
   async getCategories(
     @Args('language') language: string,
   ): Promise<CategoryDto[]> {
-    console.log(language);
     return this.categoriesService.findAll(language);
   }
 }
