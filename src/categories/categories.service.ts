@@ -11,6 +11,11 @@ export class CategoriesService {
     @InjectModel(Category.name) private readonly categoryModel: Model<Category>,
   ) {}
 
+  /**
+   * Finds categories with given ids.
+   * @param ids list of wanted ids
+   * @param language 'ru' for russian localization and 'en' for english
+   */
   async findByIds(
     ids: readonly string[],
     language: string,
@@ -34,6 +39,10 @@ export class CategoriesService {
       .exec();
   }
 
+  /**
+   * Finds all categories.
+   * @param language 'ru' for russian localization and 'en' for english
+   */
   async findAll(language: string): Promise<CategoryDto[]> {
     return this.categoryModel
       .aggregate<CategoryDto>([
