@@ -3,6 +3,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { Category, CategorySchema } from './shemas/category.schema';
 import { CategoriesService } from './categories.service';
 import { CategoriesResolver } from './categories.resolver';
+import { CategoryLoaders } from './category.loaders';
 
 @Module({
   imports: [
@@ -11,6 +12,6 @@ import { CategoriesResolver } from './categories.resolver';
     ]),
   ],
   providers: [CategoriesService, CategoriesResolver],
-  exports: [CategoriesService],
+  exports: [CategoriesService, CategoryLoaders],
 })
 export class CategoriesModule {}
