@@ -11,5 +11,6 @@ type Product {
 }
 
 extend type Query {
-  products(language: String): [Product]
+  products(category: String, language: String): [Product]!
+  product(id: String!, language: String): Product
 }

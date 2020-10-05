@@ -15,7 +15,9 @@ export class Category {
 export abstract class IQuery {
     abstract categories(language?: string): Category[] | Promise<Category[]>;
 
-    abstract products(language?: string): Product[] | Promise<Product[]>;
+    abstract products(category?: string, language?: string): Product[] | Promise<Product[]>;
+
+    abstract product(id: string, language?: string): Product | Promise<Product>;
 }
 
 export class Product {

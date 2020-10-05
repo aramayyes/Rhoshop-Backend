@@ -11,9 +11,20 @@ export class ProductsResolver {
     private readonly categoryLoaders: CategoryLoaders,
   ) {}
 
+  @Query('product')
+  async getProduct(
+    @Args('id') id: string,
+    @Args('language') language: string,
+  ): Promise<ProductDto> {
+    return this.productsService.findById(id, language);
+  }
+
   @Query('products')
-  async getProducts(@Args('language') language: string): Promise<ProductDto[]> {
-    return this.productsService.findAll(language);
+  async getProducts(
+    @Args('category') category: string,
+    @Args('language') language: string,
+  ): Promise<ProductDto[]> {
+    return this.productsService.findMany(category, language);
   }
 
   @ResolveField('category')
