@@ -1,0 +1,15 @@
+type Product {
+  id: String!
+  name: String!
+  description: String!
+  image: String!
+  category(language: String): Category!
+  price: Float!
+  oldPrice: Float
+  rating: Float!
+  reviewsCount: Int!
+}
+
+extend type Query {
+  products(language: String): [Product]
+}

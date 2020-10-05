@@ -11,7 +11,10 @@ export class CategoriesService {
     @InjectModel(Category.name) private readonly categoryModel: Model<Category>,
   ) {}
 
-  async findByIds(ids: readonly string[]): Promise<CategoryDto[]> {
+  async findByIds(
+    ids: readonly string[],
+    language: string,
+  ): Promise<CategoryDto[]> {
     return this.categoryModel
       .aggregate<CategoryDto>([
         {
@@ -23,7 +26,7 @@ export class CategoriesService {
           $project: {
             id: '$_id',
             _id: 0,
-            name: '$name',
+            name: language == 'ru' ? '$nameRu' : '$name',
             image: 1,
           },
         },
