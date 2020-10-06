@@ -1,2 +1,2 @@
-export * from './signIn.dto';
-export * from './jwtToken.dto';
+export * from './sign-in.dto';
+export * from './jwt-token.dto';

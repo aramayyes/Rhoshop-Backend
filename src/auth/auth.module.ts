@@ -3,7 +3,7 @@ import { AuthService } from './auth.service';
 import { UsersModule } from '../users/users.module';
 import { JwtModule } from '@nestjs/jwt';
 import { AuthResolver } from './auth.resolver';
-import { AppConfigService } from '../appConfig/appConfig.service';
+import { AppConfigService } from '../appConfig/app-config.service';
 
 @Module({
   imports: [

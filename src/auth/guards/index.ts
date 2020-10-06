@@ -1,1 +1,1 @@
-export * from './gqlJwtAuth.guard';
+export * from './gql-jwt-auth.guard';
