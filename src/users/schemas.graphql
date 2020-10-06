@@ -12,6 +12,6 @@ input CreateUserInput {
   password: String!
 }
 
-type Mutation {
+extend type Mutation {
   createUser(createUserInput: CreateUserInput!): User
 }

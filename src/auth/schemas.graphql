@@ -1,0 +1,13 @@
+input SignInInput {
+  email: String!
+  password: String!
+}
+
+type JwtToken {
+  access_token: String!
+  email: String!
+}
+
+type Mutation {
+  signIn(signInInput: SignInInput!): JwtToken!
+}
