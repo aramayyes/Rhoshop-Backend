@@ -3,8 +3,6 @@ import { Document } from 'mongoose';
 
 @Schema({
   timestamps: true,
-  toJSON: { virtuals: true },
-  toObject: { virtuals: true },
 })
 export class Category extends Document {
   @Prop({ required: true, maxlength: 100 })
@@ -20,5 +18,4 @@ export class Category extends Document {
   order: number;
 }
 
-const CategorySchema = SchemaFactory.createForClass(Category);
-export { CategorySchema };
+export const CategorySchema = SchemaFactory.createForClass(Category);

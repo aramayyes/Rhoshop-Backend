@@ -5,6 +5,7 @@ import { GraphQLModule } from '@nestjs/graphql';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 import { ProductsModule } from './products/products.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { ProductsModule } from './products/products.module';
     MongooseModule.forRoot('mongodb://localhost:27017/roshop'),
     CategoriesModule,
     ProductsModule,
+    UsersModule,
   ],
 })
 export class AppModule {}
