@@ -6,6 +6,13 @@
 
 /* tslint:disable */
 /* eslint-disable */
+export class CreateUserInput {
+    name: string;
+    phoneNumber: string;
+    email: string;
+    password: string;
+}
+
 export class Category {
     id: string;
     name: string;
@@ -30,4 +37,15 @@ export class Product {
     oldPrice?: number;
     rating: number;
     reviewsCount: number;
+}
+
+export class User {
+    id: string;
+    name: string;
+    phoneNumber: string;
+    email: string;
+}
+
+export abstract class IMutation {
+    abstract createUser(createUserInput: CreateUserInput): User | Promise<User>;
 }

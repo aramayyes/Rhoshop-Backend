@@ -11,11 +11,11 @@ export class User extends Document {
   @Prop({ required: true, maxlength: 30 })
   phoneNumber: string;
 
-  @Prop({ required: true, unique: true })
+  @Prop({ required: true, unique: true, maxlength: 100 })
   email: string;
 
   @Prop({ required: true })
-  password: number;
+  password: string;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);
