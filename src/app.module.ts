@@ -7,7 +7,7 @@ import { join } from 'path';
 import { ProductsModule } from './products/products.module';
 import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
-import { AppConfigModule } from './appConfig/app-config.module';
+import { AppConfigModule } from './app-config/app-config.module';
 
 @Module({
   imports: [
