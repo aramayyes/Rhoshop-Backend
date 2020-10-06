@@ -41,6 +41,14 @@ export class AllExceptionsFilter implements GqlExceptionFilter {
       return new GqlError(exception.message, props);
     }
 
+    if (exception.constructor.name === 'MongoError') {
+      const mongoException = <any>exception;
+      if (mongoException.code === 11000) {
+        return new UserInputError('Duplicate entry', {
+          keys: Object.keys(mongoException.keyPattern),
+        });
+      }
+    }
     return new Error('Something went wrong.');
   }
 }
