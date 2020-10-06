@@ -7,6 +7,7 @@ import { join } from 'path';
 import { ProductsModule } from './products/products.module';
 import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
+import { AppConfigModule } from './appConfig/appConfigModule';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { AuthModule } from './auth/auth.module';
       },
     }),
     MongooseModule.forRoot('mongodb://localhost:27017/roshop'),
+    AppConfigModule,
     CategoriesModule,
     ProductsModule,
     UsersModule,
