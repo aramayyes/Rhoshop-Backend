@@ -4,7 +4,6 @@ import { Model } from 'mongoose';
 import { User } from './schemas';
 import { CreateUserDto, UserDto } from './dto';
 import { createHash } from '../utils';
-import { ProductDto } from '../products/dto';
 
 @Injectable()
 export class UsersService {
@@ -16,36 +15,13 @@ export class UsersService {
    * Finds a user with given email.
    * @param email Email of wanted user.
    */
-  async findByEmail(email: string): Promise<UserDto> {
-    const users: UserDto[] = await this.usersModel
-      .aggregate<ProductDto>([
-        {
-          $match: {
-            email: email,
-          },
-        },
-        {
-          $project: {
-            id: '$_id',
-            _id: 0,
-            name: 1,
-            phoneNumber: 1,
-            email: 1,
-          },
-        },
-      ])
-      .exec();
-
-    if (users.length !== 0) {
-      return users[0];
-    } else {
-      return null;
-    }
+  async findByEmail(email: string): Promise<User> {
+    return this.usersModel.findOne({ email: email }).exec();
   }
 
   /**
    * Creates a user.
-   * @param userPayload
+   * @param userPayload Contains user data which will be created.
    */
   async create(userPayload: CreateUserDto): Promise<UserDto> {
     userPayload.password = await createHash(userPayload.password);

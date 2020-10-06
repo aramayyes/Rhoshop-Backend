@@ -7,7 +7,7 @@ import * as bCrypt from 'bcrypt';
  * @return Hashed password.
  */
 export const createHash = async (password: string) => {
-  return bCrypt.hash(password, 10, null);
+  return bCrypt.hash(password, 10);
 };
 
 /**
