@@ -6,11 +6,27 @@
 
 /* tslint:disable */
 /* eslint-disable */
+export class SignInInput {
+    email: string;
+    password: string;
+}
+
 export class CreateUserInput {
     name: string;
     phoneNumber: string;
     email: string;
     password: string;
+}
+
+export class JwtToken {
+    access_token: string;
+    email: string;
+}
+
+export abstract class IMutation {
+    abstract signIn(signInInput: SignInInput): JwtToken | Promise<JwtToken>;
+
+    abstract createUser(createUserInput: CreateUserInput): User | Promise<User>;
 }
 
 export class Category {
@@ -44,8 +60,4 @@ export class User {
     name: string;
     phoneNumber: string;
     email: string;
-}
-
-export abstract class IMutation {
-    abstract createUser(createUserInput: CreateUserInput): User | Promise<User>;
 }
