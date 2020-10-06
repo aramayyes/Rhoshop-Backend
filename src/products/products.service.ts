@@ -13,8 +13,8 @@ export class ProductsService {
 
   /**
    * Finds products for given category if it is given and all products otherwise.
-   * @param category id of the category to find products of that type
-   * @param language 'ru' for russian localization and 'en' for english
+   * @param category Id of the category to find products of that type.
+   * @param language 'ru' for russian localization and 'en' for english.
    */
   async findMany(category: string, language: string): Promise<ProductDto[]> {
     const pipeline: any[] = [];
@@ -46,8 +46,8 @@ export class ProductsService {
 
   /**
    * Finds a product with given id.
-   * @param id id of the wanted product
-   * @param language 'ru' for russian localization and 'en' for english
+   * @param id Id of the wanted product.
+   * @param language 'ru' for russian localization and 'en' for english.
    */
   async findById(id: string, language: string): Promise<ProductDto> {
     const products: ProductDto[] = await this.productModel

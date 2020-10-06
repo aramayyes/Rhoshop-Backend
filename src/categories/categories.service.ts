@@ -41,7 +41,7 @@ export class CategoriesService {
 
   /**
    * Finds all categories.
-   * @param language 'ru' for russian localization and 'en' for english
+   * @param language 'ru' for russian localization and 'en' for english.
    */
   async findAll(language: string): Promise<CategoryDto[]> {
     return this.categoryModel
