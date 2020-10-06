@@ -18,6 +18,12 @@ export class CreateUserInput {
     password: string;
 }
 
+export class UpdateUserInput {
+    id: string;
+    name?: string;
+    password?: string;
+}
+
 export class JwtToken {
     access_token: string;
     email: string;
@@ -27,6 +33,8 @@ export abstract class IMutation {
     abstract signIn(signInInput: SignInInput): JwtToken | Promise<JwtToken>;
 
     abstract createUser(createUserInput: CreateUserInput): User | Promise<User>;
+
+    abstract updateUser(updateUserInput: UpdateUserInput): User | Promise<User>;
 }
 
 export class Category {
@@ -41,6 +49,8 @@ export abstract class IQuery {
     abstract products(category?: string, language?: string): Product[] | Promise<Product[]>;
 
     abstract product(id: string, language?: string): Product | Promise<Product>;
+
+    abstract user(): User | Promise<User>;
 }
 
 export class Product {
