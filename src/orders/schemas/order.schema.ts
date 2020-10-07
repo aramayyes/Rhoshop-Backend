@@ -43,7 +43,7 @@ export class Order extends Document {
       message: props => `${props.value} is not an integer value!`,
     },
   })
-  count: number;
+  productCount: number;
 }
 
 export const OrderSchema = SchemaFactory.createForClass(Order);

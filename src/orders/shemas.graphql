@@ -1,0 +1,21 @@
+type Order {
+  product: Product!
+  productSize: String!
+  productColor: String!
+  productCount: Int!
+}
+
+input CreateOrderInput {
+  product: String!
+  productSize: String!
+  productColor: String!
+  productCount: Int!
+}
+
+extend type Query {
+  orders: [Order]!
+}
+
+extend type Mutation {
+  createOrder(order: CreateOrderInput!): Order!
+}
