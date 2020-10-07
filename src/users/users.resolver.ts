@@ -11,14 +11,14 @@ export class UsersResolver {
   constructor(private readonly usersService: UsersService) {}
 
   @Mutation('createUser')
-  async create(
+  async createUser(
     @Args('createUserInput') userInput: CreateUserDto,
   ): Promise<UserDto> {
     return this.usersService.create(userInput);
   }
 
   @Mutation('updateUser')
-  async update(
+  async updateUser(
     @Args('updateUserInput') userInput: UpdateUserDto,
   ): Promise<UserDto> {
     return this.usersService.update(userInput);
