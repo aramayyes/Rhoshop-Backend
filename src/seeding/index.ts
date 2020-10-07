@@ -1,35 +1,32 @@
 import * as mongoose from 'mongoose';
-import { NotificationSchema } from '../notifications/schemas';
 import { CategorySchema } from '../categories/shemas';
-import notifications from './notifications';
+import { ProductSchema } from '../products/schemas';
+import { NotificationSchema } from '../notifications/schemas';
 import categories from './categories';
+import products from './products';
+import notifications from './notifications';
 
-const NotificationsModel = mongoose.model('Notifications', NotificationSchema);
 const CategoriesModel = mongoose.model('Categories', CategorySchema);
+const ProductsModel = mongoose.model('Products', ProductSchema);
+const NotificationsModel = mongoose.model('Notifications', NotificationSchema);
 
 async function connect() {
+  console.log('Connecting to db...');
   await mongoose.connect('mongodb://localhost:27017/roshop', {
     useNewUrlParser: true,
     useFindAndModify: false,
     useCreateIndex: true,
     useUnifiedTopology: true,
   });
+  console.log('Connected.');
 }
 
 async function seed() {
   await connect();
 
-  const categoryDocs = await seedCollection(
-    CategoriesModel,
-    'Categories',
-    categories,
-  );
-
-  const notificationDocs = await seedCollection(
-    NotificationsModel,
-    'Notifications',
-    notifications,
-  );
+  await seedCollection(CategoriesModel, 'Categories', categories);
+  await seedCollection(ProductsModel, 'Products', products);
+  await seedCollection(NotificationsModel, 'Notifications', notifications);
 }
 
 async function seedCollection(
@@ -45,12 +42,13 @@ async function seedCollection(
   }
 
   console.log(`Inserting ${collectionName}...`);
-  items = await Promise.all(collection.map(c => CategoriesModel.create(c)));
+  items = await Promise.all(collection.map(c => model.create(c)));
   console.log(`${collectionName} are inserted.`);
 
   return items;
 }
 
 seed()
+  .then(() => console.log('Done'))
   .catch(e => console.log(e))
   .finally(() => process.exit());
