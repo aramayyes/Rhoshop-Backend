@@ -46,11 +46,18 @@ export class Category {
 export abstract class IQuery {
     abstract categories(language?: string): Category[] | Promise<Category[]>;
 
+    abstract notifications(): Notification[] | Promise<Notification[]>;
+
     abstract products(category?: string, language?: string): Product[] | Promise<Product[]>;
 
     abstract product(id: string, language?: string): Product | Promise<Product>;
 
     abstract user(): User | Promise<User>;
+}
+
+export class Notification {
+    message: string;
+    date: DateTime;
 }
 
 export class Product {
@@ -71,3 +78,5 @@ export class User {
     phoneNumber: string;
     email: string;
 }
+
+export type DateTime = any;

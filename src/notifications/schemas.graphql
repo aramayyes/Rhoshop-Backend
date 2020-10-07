@@ -1,0 +1,10 @@
+scalar DateTime
+
+type Notification {
+  message: String!
+  date: DateTime!
+}
+
+type Query {
+  notifications: [Notification]!
+}
