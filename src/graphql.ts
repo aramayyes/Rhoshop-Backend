@@ -46,7 +46,7 @@ export class Category {
 export abstract class IQuery {
     abstract categories(language?: string): Category[] | Promise<Category[]>;
 
-    abstract notifications(): Notification[] | Promise<Notification[]>;
+    abstract notifications(language?: string): Notification[] | Promise<Notification[]>;
 
     abstract products(category?: string, language?: string): Product[] | Promise<Product[]>;
 

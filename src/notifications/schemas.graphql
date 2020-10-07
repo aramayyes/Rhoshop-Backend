@@ -7,5 +7,5 @@ type Notification {
 }
 
 type Query {
-  notifications: [Notification]!
+  notifications(language: String): [Notification]!
 }
