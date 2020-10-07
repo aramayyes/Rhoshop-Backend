@@ -13,6 +13,7 @@ type Product {
 input FilterProductsInput {
   category: String
   name: String
+  ids: [String!]
 }
 
 extend type Query {

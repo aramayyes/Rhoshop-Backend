@@ -24,9 +24,10 @@ export class ProductsResolver {
     @Args('language') language: string,
   ): Promise<ProductDto[]> {
     return this.productsService.findMany(
-      filter && filter.category,
-      filter && filter.name,
       language,
+      filter && filter.name,
+      filter && filter.category,
+      filter.ids,
     );
   }
 

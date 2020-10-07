@@ -1,5 +1,10 @@
 import { FilterProductsInput } from '../../graphql';
-import { IsMongoId, IsNotEmpty, IsOptional } from 'class-validator';
+import {
+  ArrayNotEmpty,
+  IsMongoId,
+  IsNotEmpty,
+  IsOptional,
+} from 'class-validator';
 
 export class FilterProductsDto extends FilterProductsInput {
   @IsOptional()
@@ -9,4 +14,11 @@ export class FilterProductsDto extends FilterProductsInput {
   @IsOptional()
   @IsNotEmpty()
   name?: string;
+
+  @IsOptional()
+  @ArrayNotEmpty()
+  @IsMongoId({
+    each: true,
+  })
+  ids?: string[];
 }

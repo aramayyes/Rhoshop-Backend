@@ -57,17 +57,19 @@ export class ProductsService {
    * @param category Id of the category to find products of that type.
    * @param name Name pattern to filter products.
    * @param language 'ru' for russian localization and 'en' for english.
+   * @param ids Ids of wanted products.
    */
   async findMany(
-    category: string,
-    name: string,
     language: string,
+    name?: string,
+    category?: string,
+    ids?: string[],
   ): Promise<ProductDto[]> {
     const pipeline: any[] = [];
-    if (category) {
+    if (ids) {
       pipeline.push({
         $match: {
-          category: new Types.ObjectId(category),
+          _id: { $in: ids.map(id => new Types.ObjectId(id)) },
         },
       });
     }
@@ -79,6 +81,14 @@ export class ProductsService {
             $regex: `.*${name}.*`,
             $options: 'i',
           },
+        },
+      });
+    }
+
+    if (category) {
+      pipeline.push({
+        $match: {
+          category: new Types.ObjectId(category),
         },
       });
     }

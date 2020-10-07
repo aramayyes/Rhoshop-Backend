@@ -21,6 +21,7 @@ export class CreateOrderInput {
 export class FilterProductsInput {
     category?: string;
     name?: string;
+    ids?: string[];
 }
 
 export class CreateUserInput {
