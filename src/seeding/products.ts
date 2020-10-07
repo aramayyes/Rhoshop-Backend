@@ -8,7 +8,7 @@ export default [
       descriptionRu:
         'Спортивный бюстгальтер с треугольным вырезом из быстросохнущего функционального материала. Чашечки на подкладке, с вынимающимися вкладками, придают бюсту форму. Широкие бретели и спина-борцовка. Средняя степень поддержки. Минимальное количество швов для удобной посадки и максимальной подвижности.',
       category: '5f78c9e644a3aa066cf347c7',
-      image: 'assets/mock/products/underwear/pexels-danielle-pilon.jpg',
+      image: 'images/products/underwear/pexels-danielle-pilon.jpg',
       price: 19.99,
       oldPrice: null,
       rating: 4.6,
@@ -22,7 +22,7 @@ export default [
       descriptionRu:
         'Мягкое боди из кружева и тюля с рисунком, с цельнокроеными рукавами и глубоким треугольным вырезом сзади. Ластовица на кнопках.',
       category: '5f78c9e644a3aa066cf347c7',
-      image: 'assets/mock/products/underwear/pexels-chalo-garcia.jpg',
+      image: 'images/products/underwear/pexels-chalo-garcia.jpg',
       price: 34.99,
       oldPrice: null,
       rating: 5,
@@ -36,7 +36,7 @@ export default [
       descriptionRu:
         'Спортивный бюстгальтер с треугольным вырезом из быстросохнущего функционального материала. Чашечки на подкладке, с вынимающимися вкладками, придают бюсту форму. Широкие бретели и спина-борцовка. Средняя степень поддержки. Минимальное количество швов для удобной посадки и максимальной подвижности.',
       category: '5f78c9e644a3aa066cf347c7',
-      image: 'assets/mock/products/underwear/pexels-visionpic.jpg',
+      image: 'images/products/underwear/pexels-visionpic.jpg',
       price: 17.99,
       oldPrice: null,
       rating: 4.8,
@@ -50,7 +50,7 @@ export default [
       descriptionRu:
         'Лиф бикини без бретелей фасона бандо на подкладке, с декоративной окантовкой снизу. Чашечки с вынимающимися вкладками, придают бюсту форму и хорошо поддерживают его. Без застежки.',
       category: '5f78c9e644a3aa066cf347c7',
-      image: 'assets/mock/products/underwear/pexels-ekaterina-bolovtsova.jpg',
+      image: 'images/products/underwear/pexels-ekaterina-bolovtsova.jpg',
       price: 19.99,
       oldPrice: null,
       rating: 5,
@@ -64,7 +64,7 @@ export default [
       descriptionRu:
         'Бюстгальтеры из мягкого хлопкового трикотажа. Чашечки без косточек, уплотненные, придают бюсту форму и хорошо поддерживают его. Узкие регулируемые бретели. Застежка на крючки сзади.',
       category: '5f78c9e644a3aa066cf347c7',
-      image: 'assets/mock/products/underwear/katherine-kromberg-unsplash.jpg',
+      image: 'images/products/underwear/katherine-kromberg-unsplash.jpg',
       price: 17.99,
       oldPrice: null,
       rating: 4.1,
@@ -78,7 +78,7 @@ export default [
       descriptionRu:
         'Бюстгальтер балконет из трикотажа, сшитый с минимальным количеством швов для создания приятного ощущения на коже. Чашечки на косточках, уплотненные, приподнимают бюст и придают ему форму. Отстегивающиеся регулируемые бретели. Широкая застежка на крючки сзади.',
       category: '5f78c9e644a3aa066cf347c7',
-      image: 'assets/mock/products/underwear/max-libertine2-unsplash.jpg',
+      image: 'images/products/underwear/max-libertine2-unsplash.jpg',
       price: 12.99,
       oldPrice: null,
       rating: 4.4,
@@ -92,7 +92,7 @@ export default [
       descriptionRu:
         'Мягкий бюстгальтер из кружева. Чашечки без косточек, на сетчатой подкладке, придают бюсту естественную форму и слегка поддерживают его. Регулируемые бретели и застежка на крючки сзади, а также широкий кружевной кант снизу.',
       category: '5f78c9e644a3aa066cf347c7',
-      image: 'assets/mock/products/underwear/pexels-jonaorle.jpg',
+      image: 'images/products/underwear/pexels-jonaorle.jpg',
       price: 41.99,
       oldPrice: null,
       rating: 4.9,
@@ -106,7 +106,7 @@ export default [
       descriptionRu:
         'Бюстгальтер из микрофибры. Чашечки на косточках, уплотненные, придают бюсту форму и хорошо поддерживают его. Регулируемые лямки и застежка на крючки сзади.',
       category: '5f78c9e644a3aa066cf347c7',
-      image: 'assets/mock/products/underwear/max-libertine-unsplash.jpg',
+      image: 'images/products/underwear/max-libertine-unsplash.jpg',
       price: 18.99,
       oldPrice: null,
       rating: 3.9,
@@ -120,7 +120,7 @@ export default [
       descriptionRu:
         'Мягкий кружевной бюстгальтер. Чашечки без косточек, на подкладке из трикотажа, с вынимающимися вкладками, которые придают бюсту форму, а также хорошо поддерживают его. Широкий кант снизу. Регулируемые бретели. Без застежки.',
       category: '5f78c9e644a3aa066cf347c7',
-      image: 'assets/mock/products/underwear/timofey-urov-unsplash.jpg',
+      image: 'images/products/underwear/timofey-urov-unsplash.jpg',
       price: 12.99,
       oldPrice: null,
       rating: 5,
@@ -134,7 +134,7 @@ export default [
       descriptionRu:
         'Мягкий кружевной бюстгальтер. Уплотненные чашечки без косточек, зрительно увеличивают бюст и создают пышное декольте. Широкий кружевной кант снизу. Регулируемые бретели. Застежка на крючки сзади.',
       category: '5f78c9e644a3aa066cf347c7',
-      image: 'assets/mock/products/underwear/garin-chadwick-unsplash.jpg',
+      image: 'images/products/underwear/garin-chadwick-unsplash.jpg',
       price: 29.99,
       oldPrice: null,
       rating: 4.9,
@@ -148,7 +148,7 @@ export default [
       descriptionRu:
         'Длинное платье из хрустящей нейлоновой ткани. Короткие присборенные рукава с узкими манжетами на обтянутой пуговице. Кокетка и вытачка снизу со сборкой для дополнительного объема. Потайная молния на спине. Без подкладки.',
       category: '5f78c9e644a3aa066cf347c9',
-      image: 'assets/mock/products/dresses/vicky-cheng-unsplash.jpg',
+      image: 'images/products/dresses/vicky-cheng-unsplash.jpg',
       price: 12.99,
       oldPrice: null,
       rating: 4.7,
@@ -162,7 +162,7 @@ export default [
       descriptionRu:
         'Платье длиной до икры, без рукавов, из мягко драпирующейся ткани из смесового лиоцелла Tencel™. Высокий крой спереди, узкие бретели и обшитая тканью резинка сзади. Трикотажная подкладка из хлопка.',
       category: '5f78c9e644a3aa066cf347c9',
-      image: 'assets/mock/products/dresses/pexels-bruno-salvadori.jpg',
+      image: 'images/products/dresses/pexels-bruno-salvadori.jpg',
       price: 49.99,
       oldPrice: 99,
       rating: 4,
@@ -176,7 +176,7 @@ export default [
       descriptionRu:
         'Короткое платье из ткани с v-образным вырезом горловины, запахом спереди и отрезной талией с металлической пуговицей сбоку. Длинный рукав с широким манжетом на металлической пуговице. Подкладка.',
       category: '5f78c9e644a3aa066cf347c9',
-      image: 'assets/mock/products/dresses/pexels-mihai-stefan.jpg',
+      image: 'images/products/dresses/pexels-mihai-stefan.jpg',
       price: 39.99,
       oldPrice: null,
       rating: 4.5,
@@ -190,7 +190,7 @@ export default [
       descriptionRu:
         'Короткое прямое платье-футболка из плотного хлопкового трикотажа с круглым вырезом горловины, обработанным рельефной трикотажной резинкой. Без подкладки.',
       category: '5f78c9e644a3aa066cf347c9',
-      image: 'assets/mock/products/dresses/pexels-evg-culture.jpg',
+      image: 'images/products/dresses/pexels-evg-culture.jpg',
       price: 12.99,
       oldPrice: null,
       rating: 4.2,
@@ -204,7 +204,7 @@ export default [
       descriptionRu:
         'Studio Collection. Воздушное плиссированное платье из переработанного полиэстера. Треугольный вырез горловины и узкие бретели, а также поперечные перемычки сзади. Широкий силуэт и вытачки с эластичными швами и сборкой. Без подкладки.',
       category: '5f78c9e644a3aa066cf347c9',
-      image: 'assets/mock/products/dresses/pexels-maksim-goncharenok.jpg',
+      image: 'images/products/dresses/pexels-maksim-goncharenok.jpg',
       price: 29.99,
       oldPrice: null,
       rating: 4,
@@ -218,7 +218,7 @@ export default [
       descriptionRu:
         'Джемпер рельефной вязки из мягкой пряжи с добавлением шерсти. Низкий ворот и длинные широкие рукава реглан с формованными швами. Трикотажная резинка снизу на рукавах и по нижнему краю. Полиэстер в составе джемпера - переработанный.',
       category: '5f78c9e644a3aa066cf347c8',
-      image: 'assets/mock/products/sweaters/pexels-flora-westbrook.jpg',
+      image: 'images/products/sweaters/pexels-flora-westbrook.jpg',
       price: 29.99,
       oldPrice: null,
       rating: 4.8,
@@ -232,7 +232,7 @@ export default [
       descriptionRu:
         'Свободный джемпер из мягкой пряжи с добавлением шерсти. Длинные рукава с заниженной линией плеча. Рельефная обвязка снизу на рукавах и по нижнему краю. Скругленный низ. Спинка слегка удлинена. Полиэстер в составе джемпера - переработанный.',
       category: '5f78c9e644a3aa066cf347c8',
-      image: 'assets/mock/products/sweaters/pexels-daria-shevtsova.jpg',
+      image: 'images/products/sweaters/pexels-daria-shevtsova.jpg',
       price: 17.99,
       oldPrice: null,
       rating: 4.5,
@@ -246,7 +246,7 @@ export default [
       descriptionRu:
         'Вязаный джемпер оверсайз из мягкой пряжи с добавлением шерсти. Заниженная линия плеча и длинные рукава. Рельефная обвязка по горловине, низу рукавов и нижнему краю. Скругленный нижний край. Спинка удлинена. Полиэстер в составе джемпера - вторичной переработки.',
       category: '5f78c9e644a3aa066cf347c8',
-      image: 'assets/mock/products/sweaters/pexels-elina-sazonova.jpg',
+      image: 'images/products/sweaters/pexels-elina-sazonova.jpg',
       price: 34.99,
       oldPrice: null,
       rating: 4,
@@ -260,7 +260,7 @@ export default [
       descriptionRu:
         'Джемпер тонкой вязки из мягкой смесовой вискозы. Круглый вырез горловины, длинные рукава и рельефная трикотажная резинка по горловине, низу рукавов и нижнему краю. Короткие разрезы по бокам и удлиненная спинка.',
       category: '5f78c9e644a3aa066cf347c8',
-      image: 'assets/mock/products/sweaters/pexels-wesley-carvalho.jpg',
+      image: 'images/products/sweaters/pexels-wesley-carvalho.jpg',
       price: 14.99,
       oldPrice: null,
       rating: 4.9,
@@ -274,7 +274,7 @@ export default [
       descriptionRu:
         'Свободный свитер тонкой вязки из мягкого кашемира. Заниженная линия плеча и длинные широкие рукава. Рельефная обвязка горловины, низа рукавов и нижнего края.',
       category: '5f78c9e644a3aa066cf347c8',
-      image: 'assets/mock/products/sweaters/roman-holoschchuk-unsplash.jpg',
+      image: 'images/products/sweaters/roman-holoschchuk-unsplash.jpg',
       price: 87.99,
       oldPrice: null,
       rating: 5,
@@ -288,7 +288,7 @@ export default [
       descriptionRu:
         'Джинсы с пятью карманами из стираного денима стретч. Высокая талия и узкие штанины. Застежка на молнию.',
       category: '5f78c9e644a3aa066cf347ca',
-      image: 'assets/mock/products/jeans/tamara-bellis-unsplash.jpg',
+      image: 'images/products/jeans/tamara-bellis-unsplash.jpg',
       price: 22.99,
       oldPrice: null,
       rating: 4.4,
@@ -302,7 +302,7 @@ export default [
       descriptionRu:
         'Укороченные джинсы с пятью карманами из стираного денима с очень высокой талией и узкими штанинами. В состав джинсов входит переработанный хлопок.',
       category: '5f78c9e644a3aa066cf347ca',
-      image: 'assets/mock/products/jeans/oz-seyrek-unsplash.jpg',
+      image: 'images/products/jeans/oz-seyrek-unsplash.jpg',
       price: 17.99,
       oldPrice: null,
       rating: 4,
@@ -316,7 +316,7 @@ export default [
       descriptionRu:
         'Прямые узкие укороченные джинсы с пятью карманами из эластичного стираного денима. Высокая талия. Застежка на пуговицу.',
       category: '5f78c9e644a3aa066cf347ca',
-      image: 'assets/mock/products/jeans/tomiko-tan-unsplash.jpg',
+      image: 'images/products/jeans/tomiko-tan-unsplash.jpg',
       price: 29.99,
       oldPrice: null,
       rating: 4.6,
@@ -330,7 +330,7 @@ export default [
       descriptionRu:
         'Прямые, очень длинные джинсы с пятью карманами из стираного денима и необработанным низом штанин. Талия стандартной высоты. Молния и пуговица на талии.',
       category: '5f78c9e644a3aa066cf347ca',
-      image: 'assets/mock/products/jeans/pexels-heitor-verdi.jpg',
+      image: 'images/products/jeans/pexels-heitor-verdi.jpg',
       price: 49.99,
       oldPrice: null,
       rating: 4.2,
@@ -344,7 +344,7 @@ export default [
       descriptionRu:
         'Укороченные джинсы из стираного эластичного денима с талией стандартной высоты. Ложные передние карманы, настоящие задние карманы и узкие брючины.',
       category: '5f78c9e644a3aa066cf347ca',
-      image: 'assets/mock/products/jeans/pexels-oleg-magni.jpg',
+      image: 'images/products/jeans/pexels-oleg-magni.jpg',
       price: 59.99,
       oldPrice: null,
       rating: 4.3,
@@ -358,7 +358,7 @@ export default [
       descriptionRu:
         'Короткие шорты с пятью карманами из стираного, слегка эластичного хлопкового денима. Высокая талия и необработанный низ.',
       category: '5f78c9e644a3aa066cf347cb',
-      image: 'assets/mock/products/shorts/pexels-gabriel-lima.jpg',
+      image: 'images/products/shorts/pexels-gabriel-lima.jpg',
       price: 17.99,
       oldPrice: null,
       rating: 4.5,
@@ -372,7 +372,7 @@ export default [
       descriptionRu:
         'Шорты с пятью карманами из стираного хлопкового денима с высокой талией и пришитыми отворотами снизу. Застежка на молнию и пуговицу.',
       category: '5f78c9e644a3aa066cf347cb',
-      image: 'assets/mock/products/shorts/engin-akyurt-unsplash.jpg',
+      image: 'images/products/shorts/engin-akyurt-unsplash.jpg',
       price: 29.99,
       oldPrice: null,
       rating: 4.3,
@@ -386,7 +386,7 @@ export default [
       descriptionRu:
         'Шорты с пятью карманами из стираного денима. Высокая талия и довольно широкие штанины. Застежка на молнию и пуговицу.',
       category: '5f78c9e644a3aa066cf347cb',
-      image: 'assets/mock/products/shorts/pexels-thegiansepillo.jpg',
+      image: 'images/products/shorts/pexels-thegiansepillo.jpg',
       price: 24.99,
       oldPrice: null,
       rating: 4.5,
@@ -400,7 +400,7 @@ export default [
       descriptionRu:
         'Шорты из смесового льна с талией на резинке и кулиске, боковыми карманами, двумя ложными задними карманами и с короткими разрезами внизу штанин.',
       category: '5f78c9e644a3aa066cf347cb',
-      image: 'assets/mock/products/shorts/pexels-gustavo-peres.jpg',
+      image: 'images/products/shorts/pexels-gustavo-peres.jpg',
       price: 38.99,
       oldPrice: null,
       rating: 4.1,
@@ -414,7 +414,7 @@ export default [
       descriptionRu:
         'Футболка оверсайз из мягкого хлопкового трикотажа с тематическим принтом спереди, обтачкой рельефной резинкой по круглой горловине и слегка заниженной линией плеч.',
       category: '5f78c9e644a3aa066cf347c6',
-      image: 'assets/mock/products/tops/anne-peres-unsplash.jpg',
+      image: 'images/products/tops/anne-peres-unsplash.jpg',
       price: 12.99,
       oldPrice: null,
       rating: 4.2,
@@ -428,7 +428,7 @@ export default [
       descriptionRu:
         'Укороченный топ из смесового лиоцеллового Tencel™ с легким блеском. Вырез горловины сердечком, на бюсте запах, на спинке широкая сборка мелкими буфами. Модель отрезная под грудью, низ свободный, длинный широкий рукав с потайной резинкой по плечу и узкой сборкой на резинке внизу. Полочка на хлопковой подкладке.',
       category: '5f78c9e644a3aa066cf347c6',
-      image: 'assets/mock/products/tops/huseyin-topcu-unsplash.jpg',
+      image: 'images/products/tops/huseyin-topcu-unsplash.jpg',
       price: 14.99,
       oldPrice: null,
       rating: 4.8,
@@ -442,7 +442,7 @@ export default [
       descriptionRu:
         'Майка с глубоким вырезом из мягкого рельефного трикотажа из вискозы.',
       category: '5f78c9e644a3aa066cf347c6',
-      image: 'assets/mock/products/tops/pexels-marx-ilagan.jpg',
+      image: 'images/products/tops/pexels-marx-ilagan.jpg',
       price: 5.99,
       oldPrice: null,
       rating: 4,
@@ -456,7 +456,7 @@ export default [
       descriptionRu:
         'Короткий топ из вафельного трикотажа с вырезом горловины каре и короткими рукавами-фонариками с резинкой по плечам и низу. По краю рукава и низу топа обработка оверлоком. Полиэстер в составе топа - частично переработанный.',
       category: '5f78c9e644a3aa066cf347c6',
-      image: 'assets/mock/products/tops/pexels-kha-ruxury.jpg',
+      image: 'images/products/tops/pexels-kha-ruxury.jpg',
       price: 17.99,
       oldPrice: null,
       rating: 4.6,
