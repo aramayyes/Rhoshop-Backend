@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import * as mongoose from 'mongoose';
-import { Model } from 'mongoose';
+import { Model, Types } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 import { CategoryDto } from './dto';
 import { Category } from './shemas';
@@ -24,7 +23,7 @@ export class CategoriesService {
       .aggregate<CategoryDto>([
         {
           $match: {
-            _id: { $in: ids.map(id => new mongoose.Types.ObjectId(id)) },
+            _id: { $in: ids.map(id => new Types.ObjectId(id)) },
           },
         },
         {

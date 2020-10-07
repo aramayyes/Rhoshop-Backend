@@ -1,9 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { Model } from 'mongoose';
+import { Model, Types } from 'mongoose';
 import { Product } from './schemas';
 import { ProductDto } from './dto';
-import * as mongoose from 'mongoose';
 
 @Injectable()
 export class ProductsService {
@@ -21,7 +20,7 @@ export class ProductsService {
     if (category) {
       pipeline.push({
         $match: {
-          category: new mongoose.Types.ObjectId(category),
+          category: new Types.ObjectId(category),
         },
       });
     }
@@ -54,7 +53,7 @@ export class ProductsService {
       .aggregate<ProductDto>([
         {
           $match: {
-            _id: new mongoose.Types.ObjectId(id),
+            _id: new Types.ObjectId(id),
           },
         },
         {
