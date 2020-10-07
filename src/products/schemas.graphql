@@ -10,7 +10,12 @@ type Product {
   reviewsCount: Int!
 }
 
+input FilterProductsInput {
+  category: String
+  name: String
+}
+
 extend type Query {
-  products(category: String, language: String): [Product]!
+  products(filter: FilterProductsInput, language: String): [Product]!
   product(id: String!, language: String): Product
 }

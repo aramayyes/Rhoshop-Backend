@@ -13,14 +13,30 @@ export class ProductsService {
   /**
    * Finds products for given category if it is given and all products otherwise.
    * @param category Id of the category to find products of that type.
+   * @param name Name pattern to filter products.
    * @param language 'ru' for russian localization and 'en' for english.
    */
-  async findMany(category: string, language: string): Promise<ProductDto[]> {
+  async findMany(
+    category: string,
+    name: string,
+    language: string,
+  ): Promise<ProductDto[]> {
     const pipeline: any[] = [];
     if (category) {
       pipeline.push({
         $match: {
           category: new Types.ObjectId(category),
+        },
+      });
+    }
+
+    if (name) {
+      pipeline.push({
+        $match: {
+          name: {
+            $regex: `.*${name}.*`,
+            $options: 'i',
+          },
         },
       });
     }

@@ -11,6 +11,11 @@ export class SignInInput {
     password: string;
 }
 
+export class FilterProductsInput {
+    category?: string;
+    name?: string;
+}
+
 export class CreateUserInput {
     name: string;
     phoneNumber: string;
@@ -47,7 +52,7 @@ export abstract class IQuery {
 
     abstract notifications(language?: string): Notification[] | Promise<Notification[]>;
 
-    abstract products(category?: string, language?: string): Product[] | Promise<Product[]>;
+    abstract products(filter?: FilterProductsInput, language?: string): Product[] | Promise<Product[]>;
 
     abstract product(id: string, language?: string): Product | Promise<Product>;
 

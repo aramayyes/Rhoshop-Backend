@@ -3,7 +3,8 @@ import { ProductsService } from './products.service';
 import { ProductDto } from './dto';
 import { CategoryDto } from '../categories/dto';
 import { CategoryLoaders } from '../categories/category.loaders';
-import { ProductArgs, ProductsArgs, CategoryArgs } from './args';
+import { CategoryArgs, ProductArgs } from './args';
+import { FilterProductsDto } from './dto';
 
 @Resolver('Product')
 export class ProductsResolver {
@@ -18,8 +19,15 @@ export class ProductsResolver {
   }
 
   @Query('products')
-  async getProducts(@Args() args: ProductsArgs): Promise<ProductDto[]> {
-    return this.productsService.findMany(args.category, args.language);
+  async getProducts(
+    @Args('filter') filter: FilterProductsDto,
+    @Args('language') language: string,
+  ): Promise<ProductDto[]> {
+    return this.productsService.findMany(
+      filter && filter.category,
+      filter && filter.name,
+      language,
+    );
   }
 
   @ResolveField('category')
