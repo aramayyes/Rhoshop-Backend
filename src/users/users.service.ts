@@ -3,7 +3,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { User } from './schemas';
 import { CreateUserDto, UserDto } from './dto';
-import { createHash } from '../utils';
+import { hashPassword } from '../utils';
 import { UpdateUserDto } from './dto/update-user.dto';
 
 @Injectable()
@@ -35,7 +35,7 @@ export class UsersService {
    */
   async update({ id, ...payload }: UpdateUserDto): Promise<UserDto> {
     if (payload.password) {
-      payload.password = await createHash(payload.password);
+      payload.password = await hashPassword(payload.password);
     }
     return new UserDto(
       await this.usersModel.findByIdAndUpdate(id, payload, { new: true }),
@@ -47,7 +47,7 @@ export class UsersService {
    * @param userPayload Contains user data which will be created.
    */
   async create(userPayload: CreateUserDto): Promise<UserDto> {
-    userPayload.password = await createHash(userPayload.password);
+    userPayload.password = await hashPassword(userPayload.password);
     return new UserDto(await this.usersModel.create(userPayload));
   }
 }

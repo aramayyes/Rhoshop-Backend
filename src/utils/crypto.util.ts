@@ -6,7 +6,7 @@ import * as bCrypt from 'bcrypt';
  * @param password
  * @return Hashed password.
  */
-export const createHash = async (password: string) => {
+export const hashPassword = async (password: string) => {
   return bCrypt.hash(password, 10);
 };
 

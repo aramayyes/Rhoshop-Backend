@@ -2,13 +2,17 @@ import * as mongoose from 'mongoose';
 import { CategorySchema } from '../categories/shemas';
 import { ProductSchema } from '../products/schemas';
 import { NotificationSchema } from '../notifications/schemas';
+import { UserSchema } from '../users/schemas';
 import categories from './categories';
 import products from './products';
 import notifications from './notifications';
+import users from './users';
+import { hashPassword } from '../utils';
 
 const CategoriesModel = mongoose.model('Categories', CategorySchema);
 const ProductsModel = mongoose.model('Products', ProductSchema);
 const NotificationsModel = mongoose.model('Notifications', NotificationSchema);
+const UsersModel = mongoose.model('Users', UserSchema);
 
 async function connect() {
   console.log('Connecting to db...');
@@ -27,6 +31,16 @@ async function seed() {
   await seedCollection(CategoriesModel, 'Categories', categories);
   await seedCollection(ProductsModel, 'Products', products);
   await seedCollection(NotificationsModel, 'Notifications', notifications);
+  await seedCollection(
+    UsersModel,
+    'Users',
+    await Promise.all(
+      users.map(async u => {
+        u.password = await hashPassword(u.password);
+        return u;
+      }),
+    ),
+  );
 }
 
 async function seedCollection(
