@@ -13,7 +13,6 @@ input CreateUserInput {
 }
 
 input UpdateUserInput {
-  id: String!
   name: String
   password: String
 }

@@ -18,10 +18,12 @@ export class UsersResolver {
   }
 
   @Mutation('updateUser')
+  @UseGuards(GqlJwtAuthGuard)
   async updateUser(
     @Args('updateUserInput') userInput: UpdateUserDto,
+    @CurrentUser() user: { id: string; email: string },
   ): Promise<UserDto> {
-    return this.usersService.update(userInput);
+    return this.usersService.update(user.id, userInput);
   }
 
   @Query('user')

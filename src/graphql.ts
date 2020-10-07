@@ -19,7 +19,6 @@ export class CreateUserInput {
 }
 
 export class UpdateUserInput {
-    id: string;
     name?: string;
     password?: string;
 }

@@ -4,6 +4,7 @@ import {
   Catch,
   ForbiddenException,
   HttpException,
+  UnauthorizedException,
 } from '@nestjs/common';
 import {
   ApolloError,
@@ -33,7 +34,7 @@ export class AllExceptionsFilter implements GqlExceptionFilter {
         case ForbiddenException:
           GqlError = ForbiddenError;
           break;
-        case AuthenticationError:
+        case UnauthorizedException:
           GqlError = AuthenticationError;
           break;
       }

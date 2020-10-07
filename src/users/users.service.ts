@@ -33,7 +33,7 @@ export class UsersService {
    * @param id Id of user to be updated.
    * @param payload Contains new data for user.
    */
-  async update({ id, ...payload }: UpdateUserDto): Promise<UserDto> {
+  async update(id: string, payload: UpdateUserDto): Promise<UserDto> {
     if (payload.password) {
       payload.password = await hashPassword(payload.password);
     }
