@@ -4,6 +4,6 @@ type Category {
   image: String!
 }
 
-type Query {
+extend type Query {
   categories(language: String): [Category]
 }

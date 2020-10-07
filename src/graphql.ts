@@ -56,6 +56,7 @@ export abstract class IQuery {
 }
 
 export class Notification {
+    id: string;
     message: string;
     date: DateTime;
 }

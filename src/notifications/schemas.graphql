@@ -1,6 +1,7 @@
 scalar DateTime
 
 type Notification {
+  id: String!
   message: String!
   date: DateTime!
 }
