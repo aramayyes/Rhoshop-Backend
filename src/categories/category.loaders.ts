@@ -13,10 +13,12 @@ export class CategoryLoaders {
     string
   >(
     async ids => {
-      return await this.categoryService.findByIds(
+      const categories = await this.categoryService.findByIds(
         ids.map(({ id }) => id),
         ids[0].language,
       );
+
+      return ids.map(({ id }) => categories.find(c => c.id == id));
     },
     {
       cacheKeyFn: ({ id }) => id,

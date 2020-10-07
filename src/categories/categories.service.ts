@@ -12,8 +12,8 @@ export class CategoriesService {
 
   /**
    * Finds categories with given ids.
-   * @param ids list of wanted ids
-   * @param language 'ru' for russian localization and 'en' for english
+   * @param ids Ids of wanted categories.
+   * @param language 'ru' for russian localization and 'en' for english.
    */
   async findByIds(
     ids: readonly string[],
