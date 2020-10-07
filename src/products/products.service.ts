@@ -11,6 +11,14 @@ export class ProductsService {
   ) {}
 
   /**
+   * Checks whether a product with given id exists.
+   * @param id Id of the product to check existence for.
+   */
+  async exists(id: string): Promise<boolean> {
+    return this.productModel.exists({ _id: id });
+  }
+
+  /**
    * Finds products for given category if it is given and all products otherwise.
    * @param category Id of the category to find products of that type.
    * @param name Name pattern to filter products.

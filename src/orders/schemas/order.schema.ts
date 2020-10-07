@@ -5,6 +5,9 @@ import { Document, Schema as MongooseSchema } from 'mongoose';
   timestamps: true,
 })
 export class Order extends Document {
+  @Prop({ required: true, type: MongooseSchema.Types.Date })
+  date: Date;
+
   @Prop({
     type: MongooseSchema.Types.ObjectId,
     ref: 'Users',

@@ -1,4 +1,6 @@
 type Order {
+  id: String!
+  date: DateTime!
   product: Product!
   productSize: String!
   productColor: String!
@@ -17,5 +19,5 @@ extend type Query {
 }
 
 extend type Mutation {
-  createOrder(order: CreateOrderInput!): Order!
+  createOrder(createOrderInput: CreateOrderInput!): Order!
 }

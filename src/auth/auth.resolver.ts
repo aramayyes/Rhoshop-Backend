@@ -1,7 +1,7 @@
 import { Args, Mutation, Resolver } from '@nestjs/graphql';
 import { JwtTokenDto, SignInDto } from './dto';
 import { AuthService } from './auth.service';
-import { BadRequestException } from '@nestjs/common';
+import { UserInputError } from 'apollo-server-express';
 
 @Resolver()
 export class AuthResolver {
@@ -13,7 +13,7 @@ export class AuthResolver {
   ): Promise<JwtTokenDto> {
     const user = await this.authService.validateUser(email, password);
     if (!user) {
-      throw new BadRequestException('Invalid username or password');
+      throw new UserInputError('Invalid username or password');
     }
 
     return this.authService.signIn(user);

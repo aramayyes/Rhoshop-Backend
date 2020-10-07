@@ -15,7 +15,7 @@ export class Notification extends Document {
   @Prop({ required: true, maxlength: 600 })
   messageRu: string;
 
-  @Prop({ required: true })
+  @Prop({ required: true, type: MongooseSchema.Types.Date })
   date: Date;
 }
 

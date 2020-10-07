@@ -43,7 +43,7 @@ export class JwtToken {
 export abstract class IMutation {
     abstract signIn(signInInput: SignInInput): JwtToken | Promise<JwtToken>;
 
-    abstract createOrder(order: CreateOrderInput): Order | Promise<Order>;
+    abstract createOrder(createOrderInput: CreateOrderInput): Order | Promise<Order>;
 
     abstract createUser(createUserInput: CreateUserInput): User | Promise<User>;
 
@@ -77,6 +77,8 @@ export class Notification {
 }
 
 export class Order {
+    id: string;
+    date: DateTime;
     product: Product;
     productSize: string;
     productColor: string;
