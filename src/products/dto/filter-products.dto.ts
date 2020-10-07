@@ -3,7 +3,6 @@ import { IsMongoId, IsNotEmpty, IsOptional } from 'class-validator';
 
 export class FilterProductsDto extends FilterProductsInput {
   @IsOptional()
-  @IsNotEmpty()
   @IsMongoId()
   category?: string;
 

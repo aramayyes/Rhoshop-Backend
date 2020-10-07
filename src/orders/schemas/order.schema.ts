@@ -37,6 +37,7 @@ export class Order extends Document {
   @Prop({
     required: true,
     min: 1,
+    max: 20,
     type: MongooseSchema.Types.Number,
     validate: {
       validator: Number.isInteger,

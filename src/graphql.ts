@@ -11,6 +11,13 @@ export class SignInInput {
     password: string;
 }
 
+export class CreateOrderInput {
+    product: string;
+    productSize: string;
+    productColor: string;
+    productCount: number;
+}
+
 export class FilterProductsInput {
     category?: string;
     name?: string;
@@ -36,6 +43,8 @@ export class JwtToken {
 export abstract class IMutation {
     abstract signIn(signInInput: SignInInput): JwtToken | Promise<JwtToken>;
 
+    abstract createOrder(order: CreateOrderInput): Order | Promise<Order>;
+
     abstract createUser(createUserInput: CreateUserInput): User | Promise<User>;
 
     abstract updateUser(updateUserInput: UpdateUserInput): User | Promise<User>;
@@ -52,6 +61,8 @@ export abstract class IQuery {
 
     abstract notifications(language?: string): Notification[] | Promise<Notification[]>;
 
+    abstract orders(): Order[] | Promise<Order[]>;
+
     abstract products(filter?: FilterProductsInput, language?: string): Product[] | Promise<Product[]>;
 
     abstract product(id: string, language?: string): Product | Promise<Product>;
@@ -63,6 +74,13 @@ export class Notification {
     id: string;
     message: string;
     date: DateTime;
+}
+
+export class Order {
+    product: Product;
+    productSize: string;
+    productColor: string;
+    productCount: number;
 }
 
 export class Product {
