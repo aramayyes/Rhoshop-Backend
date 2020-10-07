@@ -1,7 +1,7 @@
 type Order {
   id: String!
   date: DateTime!
-  product: Product!
+  product(language: String): Product!
   productSize: String!
   productColor: String!
   productCount: Int!
