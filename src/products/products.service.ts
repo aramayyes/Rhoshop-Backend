@@ -19,6 +19,40 @@ export class ProductsService {
   }
 
   /**
+   * Finds products with given ids.
+   * @param ids Ids of wanted products.
+   * @param language 'ru' for russian localization and 'en' for english.
+   */
+  async findByIds(
+    ids: readonly string[],
+    language: string,
+  ): Promise<ProductDto[]> {
+    return this.productModel
+      .aggregate<ProductDto>([
+        {
+          $match: {
+            _id: { $in: ids.map(id => new Types.ObjectId(id)) },
+          },
+        },
+        {
+          $project: {
+            id: '$_id',
+            _id: 0,
+            name: language == 'ru' ? '$nameRu' : '$name',
+            description: language == 'ru' ? '$descriptionRu' : '$description',
+            image: 1,
+            category: 1,
+            price: 1,
+            oldPrice: 1,
+            rating: 1,
+            reviewsCount: 1,
+          },
+        },
+      ])
+      .exec();
+  }
+
+  /**
    * Finds products for given category if it is given and all products otherwise.
    * @param category Id of the category to find products of that type.
    * @param name Name pattern to filter products.
