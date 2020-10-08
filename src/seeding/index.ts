@@ -16,7 +16,7 @@ const UsersModel = mongoose.model('Users', UserSchema);
 
 async function connect() {
   console.log('Connecting to db...');
-  await mongoose.connect('mongodb://localhost:27017/roshop', {
+  await mongoose.connect(process.env.DB_CONNECTION_STRING, {
     useNewUrlParser: true,
     useFindAndModify: false,
     useCreateIndex: true,
