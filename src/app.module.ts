@@ -10,9 +10,11 @@ import { AuthModule } from './auth/auth.module';
 import { AppConfigModule } from './app-config/app-config.module';
 import { NotificationsModule } from './notifications/notifications.module';
 import { OrdersModule } from './orders/orders.module';
+import { AppConfigService } from './app-config/app-config.service';
 
 @Module({
   imports: [
+    AppConfigModule,
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'static'),
     }),
@@ -24,8 +26,12 @@ import { OrdersModule } from './orders/orders.module';
       },
       resolvers: { DateTime: GraphQLISODateTime },
     }),
-    MongooseModule.forRoot('mongodb://localhost:27017/roshop'),
-    AppConfigModule,
+    MongooseModule.forRootAsync({
+      useFactory: (configService: AppConfigService) => ({
+        uri: configService.dbConnectionString,
+      }),
+      inject: [AppConfigService],
+    }),
     CategoriesModule,
     ProductsModule,
     UsersModule,
