@@ -68,7 +68,7 @@ export abstract class IQuery {
 
     abstract newProducts(count: number, language?: string): Product[] | Promise<Product[]>;
 
-    abstract featuredProducts(count: number, language?: string): Product[] | Promise<Product[]>;
+    abstract bestSellerProducts(count: number, language?: string): Product[] | Promise<Product[]>;
 
     abstract product(id: string, language?: string): Product | Promise<Product>;
 

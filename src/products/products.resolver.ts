@@ -3,9 +3,13 @@ import { ProductsService } from './products.service';
 import { ProductDto } from './dto';
 import { CategoryDto } from '../categories/dto';
 import { CategoryLoaders } from '../categories/category.loaders';
-import { CategoryArgs, NewProductsArgs, ProductArgs } from './args';
+import {
+  BestSellerProductsArgs,
+  CategoryArgs,
+  NewProductsArgs,
+  ProductArgs,
+} from './args';
 import { FilterProductsDto } from './dto';
-import { FeaturedProductsArgs } from './args/featured-products.args';
 
 @Resolver('Product')
 export class ProductsResolver {
@@ -32,9 +36,9 @@ export class ProductsResolver {
     return this.productsService.findRandom(args.count, args.language);
   }
 
-  @Query('featuredProducts')
-  async getFeatureProducts(
-    @Args() args: FeaturedProductsArgs,
+  @Query('bestSellerProducts')
+  async getBestSellerProducts(
+    @Args() args: BestSellerProductsArgs,
   ): Promise<ProductDto[]> {
     return this.productsService.findRandom(args.count, args.language);
   }

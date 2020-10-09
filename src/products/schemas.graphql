@@ -19,6 +19,6 @@ input FilterProductsInput {
 extend type Query {
   products(filter: FilterProductsInput, language: String): [Product]!
   newProducts(count: Int!, language: String): [Product]!
-  featuredProducts(count: Int!, language: String): [Product]!
+  bestSellerProducts(count: Int!, language: String): [Product]!
   product(id: String!, language: String): Product
 }
