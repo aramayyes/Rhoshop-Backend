@@ -112,6 +112,35 @@ export class ProductsService {
   }
 
   /**
+   * Finds random products.
+   * @param count How many products to find.
+   * @param language 'ru' for russian localization and 'en' for english.
+   */
+  async findRandom(count: number, language: string): Promise<ProductDto[]> {
+    return this.productModel.aggregate([
+      {
+        $sample: {
+          size: count,
+        },
+      },
+      {
+        $project: {
+          id: '$_id',
+          _id: 0,
+          name: language == 'ru' ? '$nameRu' : '$name',
+          description: language == 'ru' ? '$descriptionRu' : '$description',
+          image: 1,
+          category: 1,
+          price: 1,
+          oldPrice: 1,
+          rating: 1,
+          reviewsCount: 1,
+        },
+      },
+    ]);
+  }
+
+  /**
    * Finds a product with given id.
    * @param id Id of the wanted product.
    * @param language 'ru' for russian localization and 'en' for english.

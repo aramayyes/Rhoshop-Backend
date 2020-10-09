@@ -66,6 +66,10 @@ export abstract class IQuery {
 
     abstract products(filter?: FilterProductsInput, language?: string): Product[] | Promise<Product[]>;
 
+    abstract newProducts(count: number, language?: string): Product[] | Promise<Product[]>;
+
+    abstract featuredProducts(count: number, language?: string): Product[] | Promise<Product[]>;
+
     abstract product(id: string, language?: string): Product | Promise<Product>;
 
     abstract user(): User | Promise<User>;
