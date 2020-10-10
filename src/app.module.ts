@@ -25,6 +25,7 @@ import { AppConfigService } from './app-config/app-config.service';
         outputAs: 'class',
       },
       resolvers: { DateTime: GraphQLISODateTime },
+      debug: false,
     }),
     MongooseModule.forRootAsync({
       useFactory: (configService: AppConfigService) => ({
