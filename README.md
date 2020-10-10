@@ -2,9 +2,10 @@
 
  
  <p align="center">
- <img src="https://i.imgur.com/xB1QAr5.png" width="96">
+ <img src="https://i.imgur.com/xB1QAr5.png" width="200">
  </p>
- This repository contains source code of the API server for Roshop mobile application. (available [here](https://github.com/aramayyes/Rhoshop-Mobile))
+ 
+ This repository contains source code of the API server for [Roshop mobile application](https://github.com/aramayyes/Rhoshop-Mobile).
    
  ## Application
  
