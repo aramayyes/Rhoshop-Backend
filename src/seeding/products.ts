@@ -39,92 +39,8 @@ export default [
       image: 'products/underwear/pexels-visionpic.jpg',
       price: 17.99,
       oldPrice: null,
-      rating: 4.8,
+      rating: 3.2,
       reviewsCount: 6,
-    },
-    {
-      name: 'Bikini Top',
-      nameRu: 'Лиф бикини',
-      description:
-        'Lined, soft-cup bikini top with removable inserts for shaping and good support. Adjustable, ruffle-trimmed shoulder straps and ties at back.',
-      descriptionRu:
-        'Лиф бикини без бретелей фасона бандо на подкладке, с декоративной окантовкой снизу. Чашечки с вынимающимися вкладками, придают бюсту форму и хорошо поддерживают его. Без застежки.',
-      category: '5f78c9e644a3aa066cf347c7',
-      image: 'products/underwear/pexels-ekaterina-bolovtsova.jpg',
-      price: 19.99,
-      oldPrice: null,
-      rating: 5,
-      reviewsCount: 39,
-    },
-    {
-      name: 'Ribbed Jersey Padded Bra',
-      nameRu: 'Хлопковый бюстгальтер',
-      description:
-        'Soft-cup bra in ribbed jersey with wide elastic at lower edge. Adjustable shoulder straps, lined cups with removable inserts for shaping and good support, and hook-and-eye fasteners at back.',
-      descriptionRu:
-        'Бюстгальтеры из мягкого хлопкового трикотажа. Чашечки без косточек, уплотненные, придают бюсту форму и хорошо поддерживают его. Узкие регулируемые бретели. Застежка на крючки сзади.',
-      category: '5f78c9e644a3aa066cf347c7',
-      image: 'products/underwear/katherine-kromberg-unsplash.jpg',
-      price: 17.99,
-      oldPrice: null,
-      rating: 4.1,
-      reviewsCount: 273,
-    },
-    {
-      name: 'Microfiber Thong Brief',
-      nameRu: 'Бюстгальтер без швов',
-      description:
-        'Briefs in microfiber with a low waist, narrow elastic strap at sides, and thong back. Lined gusset.',
-      descriptionRu:
-        'Бюстгальтер балконет из трикотажа, сшитый с минимальным количеством швов для создания приятного ощущения на коже. Чашечки на косточках, уплотненные, приподнимают бюст и придают ему форму. Отстегивающиеся регулируемые бретели. Широкая застежка на крючки сзади.',
-      category: '5f78c9e644a3aa066cf347c7',
-      image: 'products/underwear/max-libertine2-unsplash.jpg',
-      price: 12.99,
-      oldPrice: null,
-      rating: 4.4,
-      reviewsCount: 120,
-    },
-    {
-      name: 'Lace Push-up Bra',
-      nameRu: 'Мягкий кружевной бюстгальтер',
-      description:
-        'Push-up bra in lace with padded, underwire cups to maximize bust and cleavage. Adjustable shoulder straps. Hook-and-eye fasteners at back.',
-      descriptionRu:
-        'Мягкий бюстгальтер из кружева. Чашечки без косточек, на сетчатой подкладке, придают бюсту естественную форму и слегка поддерживают его. Регулируемые бретели и застежка на крючки сзади, а также широкий кружевной кант снизу.',
-      category: '5f78c9e644a3aa066cf347c7',
-      image: 'products/underwear/pexels-jonaorle.jpg',
-      price: 41.99,
-      oldPrice: null,
-      rating: 4.9,
-      reviewsCount: 67,
-    },
-    {
-      name: 'Microfiber Bra',
-      nameRu: 'Бюстгальтер из микрофибры',
-      description:
-        'T-shirt bra in microfiber with padded underwire cups for shaping and good support. Adjustable shoulder straps. Hook-and-eye fasteners at back.',
-      descriptionRu:
-        'Бюстгальтер из микрофибры. Чашечки на косточках, уплотненные, придают бюсту форму и хорошо поддерживают его. Регулируемые лямки и застежка на крючки сзади.',
-      category: '5f78c9e644a3aa066cf347c7',
-      image: 'products/underwear/max-libertine-unsplash.jpg',
-      price: 18.99,
-      oldPrice: null,
-      rating: 3.9,
-      reviewsCount: 55,
-    },
-    {
-      name: 'Padded Lace Bra',
-      nameRu: 'Плотный кружевой бюстгальтер',
-      description:
-        'Soft-cup bra in lace. Adjustable shoulder straps, jersey-lined cups with removable inserts for shaping and good support, and wide lower edge. No fasteners.',
-      descriptionRu:
-        'Мягкий кружевной бюстгальтер. Чашечки без косточек, на подкладке из трикотажа, с вынимающимися вкладками, которые придают бюсту форму, а также хорошо поддерживают его. Широкий кант снизу. Регулируемые бретели. Без застежки.',
-      category: '5f78c9e644a3aa066cf347c7',
-      image: 'products/underwear/timofey-urov-unsplash.jpg',
-      price: 12.99,
-      oldPrice: null,
-      rating: 5,
-      reviewsCount: 195,
     },
     {
       name: 'Unpadded Bra',
@@ -140,6 +56,91 @@ export default [
       rating: 4.9,
       reviewsCount: 103,
     },
+    {
+      name: 'Bikini Top',
+      nameRu: 'Лиф бикини',
+      description:
+        'Lined, soft-cup bikini top with removable inserts for shaping and good support. Adjustable, ruffle-trimmed shoulder straps and ties at back.',
+      descriptionRu:
+        'Лиф бикини без бретелей фасона бандо на подкладке, с декоративной окантовкой снизу. Чашечки с вынимающимися вкладками, придают бюсту форму и хорошо поддерживают его. Без застежки.',
+      category: '5f78c9e644a3aa066cf347c7',
+      image: 'products/underwear/pexels-ekaterina-bolovtsova.jpg',
+      price: 19.99,
+      oldPrice: null,
+      rating: 4.4,
+      reviewsCount: 261,
+    },
+    {
+      name: 'Ribbed Jersey Padded Bra',
+      nameRu: 'Хлопковый бюстгальтер',
+      description:
+        'Soft-cup bra in ribbed jersey with wide elastic at lower edge. Adjustable shoulder straps, lined cups with removable inserts for shaping and good support, and hook-and-eye fasteners at back.',
+      descriptionRu:
+        'Бюстгальтеры из мягкого хлопкового трикотажа. Чашечки без косточек, уплотненные, придают бюсту форму и хорошо поддерживают его. Узкие регулируемые бретели. Застежка на крючки сзади.',
+      category: '5f78c9e644a3aa066cf347c7',
+      image: 'products/underwear/katherine-kromberg-unsplash.jpg',
+      price: 17.99,
+      oldPrice: null,
+      rating: 3.6,
+      reviewsCount: 18,
+    },
+    {
+      name: 'Microfiber Thong Brief',
+      nameRu: 'Бюстгальтер без швов',
+      description:
+        'Briefs in microfiber with a low waist, narrow elastic strap at sides, and thong back. Lined gusset.',
+      descriptionRu:
+        'Бюстгальтер балконет из трикотажа, сшитый с минимальным количеством швов для создания приятного ощущения на коже. Чашечки на косточках, уплотненные, приподнимают бюст и придают ему форму. Отстегивающиеся регулируемые бретели. Широкая застежка на крючки сзади.',
+      category: '5f78c9e644a3aa066cf347c7',
+      image: 'products/underwear/max-libertine2-unsplash.jpg',
+      price: 12.99,
+      oldPrice: null,
+      rating: 4.6,
+      reviewsCount: 120,
+    },
+    {
+      name: 'Lace Push-up Bra',
+      nameRu: 'Мягкий кружевной бюстгальтер',
+      description:
+        'Push-up bra in lace with padded, underwire cups to maximize bust and cleavage. Adjustable shoulder straps. Hook-and-eye fasteners at back.',
+      descriptionRu:
+        'Мягкий бюстгальтер из кружева. Чашечки без косточек, на сетчатой подкладке, придают бюсту естественную форму и слегка поддерживают его. Регулируемые бретели и застежка на крючки сзади, а также широкий кружевной кант снизу.',
+      category: '5f78c9e644a3aa066cf347c7',
+      image: 'products/underwear/pexels-jonaorle.jpg',
+      price: 41.99,
+      oldPrice: null,
+      rating: 5.0,
+      reviewsCount: 67,
+    },
+    {
+      name: 'Microfiber Bra',
+      nameRu: 'Бюстгальтер из микрофибры',
+      description:
+        'T-shirt bra in microfiber with padded underwire cups for shaping and good support. Adjustable shoulder straps. Hook-and-eye fasteners at back.',
+      descriptionRu:
+        'Бюстгальтер из микрофибры. Чашечки на косточках, уплотненные, придают бюсту форму и хорошо поддерживают его. Регулируемые лямки и застежка на крючки сзади.',
+      category: '5f78c9e644a3aa066cf347c7',
+      image: 'products/underwear/max-libertine-unsplash.jpg',
+      price: 18.99,
+      oldPrice: null,
+      rating: 4.9,
+      reviewsCount: 55,
+    },
+    {
+      name: 'Padded Lace Bra',
+      nameRu: 'Плотный кружевой бюстгальтер',
+      description:
+        'Soft-cup bra in lace. Adjustable shoulder straps, jersey-lined cups with removable inserts for shaping and good support, and wide lower edge. No fasteners.',
+      descriptionRu:
+        'Мягкий кружевной бюстгальтер. Чашечки без косточек, на подкладке из трикотажа, с вынимающимися вкладками, которые придают бюсту форму, а также хорошо поддерживают его. Широкий кант снизу. Регулируемые бретели. Без застежки.',
+      category: '5f78c9e644a3aa066cf347c7',
+      image: 'products/underwear/timofey-urov-unsplash.jpg',
+      price: 12.99,
+      oldPrice: null,
+      rating: 5.0,
+      reviewsCount: 195,
+    },
+
     {
       name: 'Stand-up Collar Top',
       nameRu: 'С присборенным рукавом',
@@ -165,8 +166,8 @@ export default [
       image: 'products/dresses/pexels-bruno-salvadori.jpg',
       price: 49.99,
       oldPrice: 99,
-      rating: 4,
-      reviewsCount: 113,
+      rating: 3.8,
+      reviewsCount: 29,
     },
     {
       name: 'A-line Dress',
@@ -179,8 +180,8 @@ export default [
       image: 'products/dresses/pexels-mihai-stefan.jpg',
       price: 39.99,
       oldPrice: null,
-      rating: 4.5,
-      reviewsCount: 99,
+      rating: 4.9,
+      reviewsCount: 113,
     },
     {
       name: 'Long-sleeved Bodycon Dress',
@@ -207,8 +208,8 @@ export default [
       image: 'products/dresses/pexels-maksim-goncharenok.jpg',
       price: 29.99,
       oldPrice: null,
-      rating: 4,
-      reviewsCount: 74,
+      rating: 2.8,
+      reviewsCount: 11,
     },
     {
       name: 'Chenille Sweater',
@@ -221,7 +222,7 @@ export default [
       image: 'products/sweaters/pexels-flora-westbrook.jpg',
       price: 29.99,
       oldPrice: null,
-      rating: 4.8,
+      rating: 5.0,
       reviewsCount: 144,
     },
     {
@@ -249,7 +250,7 @@ export default [
       image: 'products/sweaters/pexels-elina-sazonova.jpg',
       price: 34.99,
       oldPrice: null,
-      rating: 4,
+      rating: 4.0,
       reviewsCount: 38,
     },
     {
@@ -277,7 +278,7 @@ export default [
       image: 'products/sweaters/roman-holoschchuk-unsplash.jpg',
       price: 87.99,
       oldPrice: null,
-      rating: 5,
+      rating: 4.7,
       reviewsCount: 238,
     },
     {
@@ -305,7 +306,7 @@ export default [
       image: 'products/jeans/oz-seyrek-unsplash.jpg',
       price: 17.99,
       oldPrice: null,
-      rating: 4,
+      rating: 4.0,
       reviewsCount: 34,
     },
     {
@@ -333,7 +334,7 @@ export default [
       image: 'products/jeans/pexels-heitor-verdi.jpg',
       price: 49.99,
       oldPrice: null,
-      rating: 4.2,
+      rating: 3.8,
       reviewsCount: 36,
     },
     {
@@ -389,7 +390,7 @@ export default [
       image: 'products/shorts/pexels-thegiansepillo.jpg',
       price: 24.99,
       oldPrice: null,
-      rating: 4.5,
+      rating: 4.8,
       reviewsCount: 100,
     },
     {
@@ -403,7 +404,7 @@ export default [
       image: 'products/shorts/pexels-gustavo-peres.jpg',
       price: 38.99,
       oldPrice: null,
-      rating: 4.1,
+      rating: 4.9,
       reviewsCount: 77,
     },
     {
@@ -445,7 +446,7 @@ export default [
       image: 'products/tops/pexels-marx-ilagan.jpg',
       price: 5.99,
       oldPrice: null,
-      rating: 4,
+      rating: 3.9,
       reviewsCount: 89,
     },
     {
